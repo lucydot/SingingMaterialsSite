@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Singing Materials</title>
+  <meta name="description" content="Pick a material, choose how it should sound, and hear its atomic-scale vibrations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Quicksand:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <!-- Strudel plays the code; pinned version (CLAUDE.md) -->
+  <script src="https://unpkg.com/@strudel/web@1.3.0/dist/index.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<div class="page">
+  <header class="site-header">
+    <a class="site-name" href="./"><img src="title.svg" alt="Singing Materials"></a>
+    <nav aria-label="Main">
+      <a href="./" aria-current="page">Listen</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="tagline">The sound of atomic-scale vibrations.</p>
+
+    <section class="choose" aria-label="Choose a sound">
+      <div class="field">
+        <label for="material">Material</label>
+        <select id="material" disabled><option>Loading…</option></select>
+        <p id="description" class="description" aria-live="polite"></p>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="element">Element</label>
+          <select id="element"></select>
+        </div>
+        <div class="field">
+          <label for="temp">Temperature</label>
+          <select id="temp"></select>
+        </div>
+      </div>
+
+      <fieldset class="field">
+        <legend>Sound <span class="visually-hidden">(choose one or more to play together)</span></legend>
+        <div class="methods" id="methods"></div>
+        <p id="method-desc" class="hint"></p>
+      </fieldset>
+
+      <button id="play" class="play" type="button" disabled>Play</button>
+      <p id="status" class="hint" aria-live="polite"></p>
+    </section>
+
+    <figure class="chart">
+      <div class="chart-wrap" id="chart"></div>
+    </figure>
+
+    <section aria-labelledby="code-heading">
+      <h2 id="code-heading" class="small">The code producing the sound:</h2>
+      <pre class="code" tabindex="0" aria-labelledby="code-heading"><code id="code"></code></pre>
+      <p class="small"><a id="strudel-link" href="https://strudel.cc/" target="_blank" rel="noopener">Open code in strudel.cc ↗<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+      <p class="small"><a id="mp-link" href="https://next-gen.materialsproject.org/" target="_blank" rel="noopener">Open material entry in Materials Project ↗<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+    </section>
+
+    <noscript><p class="small">This page needs JavaScript to play sounds and draw the chart.</p></noscript>
+  </main>
+
+  <footer>
+    <p>Data: <a href="https://next-gen.materialsproject.org/">Materials Project</a>.
+      Peaks: <a href="https://github.com/lucydot/SingingMaterials">SingingMaterials</a>.
+      Sound: <a href="https://strudel.cc/">Strudel</a>.</p>
+    <p>Whalley, L. et al. (2026). <a href="https://arxiv.org/abs/2603.29037">Singing Materials: Initial experiments in applying sonification to phonon spectra</a>.</p>
+  </footer>
+</div>
+</body>
+</html>

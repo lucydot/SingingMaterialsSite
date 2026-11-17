@@ -1,0 +1,26 @@
+[
+ {
+  "name": "chord",
+  "play": "chord({x}).slow(2)",
+  "describe": "Every peak sounds together; taller peaks louder, broader peaks wobble more.",
+  "code": "// Width as a pitch wobble: vibrato depth in semitones covering half the peak width.\nconst wobble = (p, i) => 12 * Math.log2(1 + p.width[i] / (2 * p.freq[i]))\n\n// chord: all peaks sounding together as sine tones.\n// pitch = freq, loudness = D, vibrato depth = width \nconst chord = p => stack(...p.freq.map((f, i) =>\n  freq(f).s(\"sine\")\n    .gain(0.6 * p.D[i] / Math.sqrt(p.freq.length))\n    .vib(4).vibmod(wobble(p, i))\n))"
+ },
+ {
+  "name": "arp",
+  "play": "arp({x})",
+  "describe": "The peaks one after another, low to high; sharp peaks ring longer.",
+  "code": "// Sharpness of a peak: Q = freq / width. Sharp (high Q) peaks are long-lived vibrations. \n// A peak's lifetime is ~ 1 / (pi * width) scaled into a reasonable range for audible decay times.\nconst sharpness = (p, i) => p.freq[i] / p.width[i]\nconst ringTime = (p, i) => Math.min(2, Math.max(0.05, 0.04 * sharpness(p, i)))\n\n// arp: peaks one after another, low to high, in one cycle.\n//  pitch = freq, loudness = D, ring time = sharpness\nconst arp = p => seq(...p.freq.map((f, i) =>\n  freq(f).s(\"sine\").gain(p.D[i]).decay(ringTime(p, i)).sustain(0)\n))"
+ },
+ {
+  "name": "pluck",
+  "play": "pluck({x})",
+  "describe": "The chord struck once and left to ring; each peak fades at its own rate.",
+  "code": "// Sharpness of a peak: Q = freq / width. Sharp (high Q) peaks are long-lived vibrations. \n// A peak's lifetime is ~ 1 / (pi * width) scaled into a reasonable range for audible decay times.\nconst sharpness = (p, i) => p.freq[i] / p.width[i]\nconst ringTime = (p, i) => Math.min(2, Math.max(0.05, 0.04 * sharpness(p, i)))\n\n// pluck: the chord struck at once and left to ring, each peak decaying at its own rate.\nconst pluck = p => stack(...p.freq.map((f, i) =>\n  freq(f).s(\"triangle\")\n    .gain(p.D[i] / Math.sqrt(p.freq.length))\n    .decay(ringTime(p, i)).sustain(0)\n))"
+ },
+ {
+  "name": "spectrum",
+  "play": "spectrum({x}).slow(2)",
+  "describe": "Each peak as a band of noise, as wide as the peak.",
+  "code": "// Sharpness of a peak: Q = freq / width. Sharp (high Q) peaks are long-lived vibrations. \n// A peak's lifetime is ~ 1 / (pi * width) scaled into a reasonable range for audible decay times.\nconst sharpness = (p, i) => p.freq[i] / p.width[i]\nconst ringTime = (p, i) => Math.min(2, Math.max(0.05, 0.04 * sharpness(p, i)))\n\n// spectrum: each peak is a band of filtered noise centred on freq with bandwidth = width.\nconst spectrum = p => stack(...p.freq.map((f, i) =>\n  s(\"pink\").bpf(f).bpq(sharpness(p, i)).gain(p.D[i])\n))"
+ }
+]

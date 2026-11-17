@@ -1,0 +1,681 @@
+# Materials on the site, in the order they appear in the drop-down (grouped by `group`).
+#
+# Each entry: id (Materials Project), name, formula, sg (expected space group, MP's notation; a list if
+# either is fine), group, description (one line, shown under the drop-down). Optional n_peaks /
+# smoothing (THz) override the defaults below: one value, or per element as in MP2Strudel. In a
+# per-element dict, a `total` key sets the fit for "all (total DOS)" on the page, e.g. {Ca: 6, total: 8}.
+#
+# Many IDs were written from memory. `python scripts/check_materials.py` checks every ID has phonon data
+# with the right formula and space group, and suggests a replacement where not; `--fix` writes them in.
+
+defaults:
+  temps: [athermal, 300, 600]
+  projection: element
+  n_peaks: 9
+  smoothing: 0.3        # THz
+  min_frequency: 0.0    # THz
+  octaves_down: 35      # MP2Strudel default: 1 THz sounds at ~29 Hz
+
+materials:
+
+  # ---- Elements ----
+  - id: mp-66
+    name: diamond
+    formula: C
+    sg: Fd-3m
+    group: Elements
+    description: The hardest natural material. Light carbon atoms and stiff bonds give some of the highest-pitched vibrations here.
+  - id: mp-48
+    name: graphite
+    formula: C
+    sg: P6_3/mmc
+    group: Elements
+    description: Carbon again, in stacked sheets. Strong bonds within each sheet and weak ones between them, so it sings both high and low.
+  - id: mp-149
+    name: silicon
+    formula: Si
+    sg: Fd-3m
+    group: Elements
+    description: The material of computer chips. The same structure as diamond with heavier atoms, so the whole spectrum drops.
+  - id: mp-32
+    name: germanium
+    formula: Ge
+    sg: Fd-3m
+    group: Elements
+    description: Used in the first transistors. Diamond's structure again, heavier than silicon and lower again in pitch.
+  - id: mp-117
+    name: grey tin
+    formula: Sn
+    sg: Fd-3m
+    group: Elements
+    description: Diamond's structure with heavy tin atoms. Below 13 °C white tin can slowly crumble into this grey form ("tin pest").
+  - id: mp-19
+    name: tellurium
+    formula: Te
+    sg: [P3_121, P3_221]
+    group: Elements
+    description: A brittle, silvery element built from spiralling chains of atoms.
+  - id: mp-157
+    name: black phosphorus
+    formula: P
+    sg: Cmce
+    group: Elements
+    description: Phosphorus in puckered layers, like crinkled graphite. It can be peeled into sheets one atom thick.
+  - id: mp-30
+    name: copper
+    formula: Cu
+    sg: Fm-3m
+    group: Elements
+    description: Wires and pipes. In a metal, electrons as well as vibrating atoms carry heat.
+  - id: mp-134
+    name: aluminium
+    formula: Al
+    sg: Fm-3m
+    group: Elements
+    description: A light metal for drinks cans, foil and aircraft.
+  - id: mp-81
+    name: gold
+    formula: Au
+    sg: Fm-3m
+    group: Elements
+    description: Heavy, soft atoms vibrate slowly, so gold sounds deep.
+  - id: mp-20483
+    name: lead
+    formula: Pb
+    sg: Fm-3m
+    group: Elements
+    description: One of the heaviest and softest metals, with some of the lowest vibration frequencies of any element.
+
+  # ---- Semiconductors ----
+  - id: mp-2534
+    name: gallium arsenide
+    formula: GaAs
+    sg: F-43m
+    group: Semiconductors
+    description: Diamond's structure with two atoms of almost the same mass. In lasers, LEDs and the solar panels of satellites.
+  - id: mp-2490
+    name: gallium phosphide
+    formula: GaP
+    sg: F-43m
+    group: Semiconductors
+    description: Used in early red and green LEDs. Lighter phosphorus lifts the top of the spectrum compared with GaAs.
+  - id: mp-1156
+    name: gallium antimonide
+    formula: GaSb
+    sg: F-43m
+    group: Semiconductors
+    description: An infrared detector material. Two heavy atoms make it soft and low-pitched.
+  - id: mp-804
+    name: gallium nitride
+    formula: GaN
+    sg: P6_3mc
+    group: Semiconductors
+    description: The material behind blue LEDs (Nobel Prize 2014) and small, fast phone chargers.
+  - id: mp-20351
+    name: indium phosphide
+    formula: InP
+    sg: F-43m
+    group: Semiconductors
+    description: Sends and receives the light signals in fibre-optic networks.
+  - id: mp-20305
+    name: indium arsenide
+    formula: InAs
+    sg: F-43m
+    group: Semiconductors
+    description: Electrons move through it very fast. Used in infrared detectors and high-speed electronics.
+  - id: mp-20012
+    name: indium antimonide
+    formula: InSb
+    sg: F-43m
+    group: Semiconductors
+    description: Heavy atoms and weak bonds. Used in thermal-imaging cameras.
+  - id: mp-22205
+    name: indium nitride
+    formula: InN
+    sg: P6_3mc
+    group: Semiconductors
+    description: Heavy indium with light nitrogen, so a wide gap between the low and high peaks.
+  - id: mp-661
+    name: aluminium nitride
+    formula: AlN
+    sg: P6_3mc
+    group: Semiconductors
+    description: A ceramic that carries heat well but not electricity, used to cool electronics.
+  - id: mp-1550
+    name: aluminium phosphide
+    formula: AlP
+    sg: F-43m
+    group: Semiconductors
+    description: Releases phosphine gas when wet, so it is used to fumigate stored grain.
+  - id: mp-2172
+    name: aluminium arsenide
+    formula: AlAs
+    sg: F-43m
+    group: Semiconductors
+    description: Almost exactly the size of GaAs, so layers of the two grow neatly together in laser diodes.
+  - id: mp-1639
+    name: cubic boron nitride
+    formula: BN
+    sg: F-43m
+    group: Semiconductors
+    description: Diamond's structure built from boron and nitrogen. Nearly as hard as diamond and used in cutting tools.
+  - id: mp-10044
+    name: boron arsenide
+    formula: BAs
+    sg: F-43m
+    group: Semiconductors
+    description: Light boron and heavy arsenic leave a big gap between low and high peaks. It conducts heat almost as well as diamond.
+  - id: mp-1479
+    name: boron phosphide
+    formula: BP
+    sg: F-43m
+    group: Semiconductors
+    description: A hard, chemically tough semiconductor. Light atoms and stiff bonds put it high in pitch.
+  - id: mp-2133
+    name: zinc oxide
+    formula: ZnO
+    sg: P6_3mc
+    group: Semiconductors
+    description: The white in sunscreen and nappy cream. It also turns squeezing into voltage (piezoelectric).
+  - id: mp-10695
+    name: zinc blende
+    formula: ZnS
+    sg: F-43m
+    group: Semiconductors
+    description: The mineral sphalerite, the main ore of zinc. It gave its name to the crystal structure of GaAs and its relatives.
+  - id: mp-1190
+    name: zinc selenide
+    formula: ZnSe
+    sg: F-43m
+    group: Semiconductors
+    description: Clear to infrared light. Used for the lenses and windows of carbon dioxide lasers.
+  - id: mp-2176
+    name: zinc telluride
+    formula: ZnTe
+    sg: F-43m
+    group: Semiconductors
+    description: Used to make and detect terahertz pulses, the same frequency range as the vibrations you are hearing.
+  - id: mp-672
+    name: cadmium sulfide
+    formula: CdS
+    sg: P6_3mc
+    group: Semiconductors
+    description: The pigment cadmium yellow. Also used in light-dependent resistors.
+  - id: mp-2691
+    name: cadmium selenide
+    formula: CdSe
+    sg: P6_3mc
+    group: Semiconductors
+    description: Tiny crystals of it are the quantum dots that glow in some TV screens.
+  - id: mp-406
+    name: cadmium telluride
+    formula: CdTe
+    sg: F-43m
+    group: Semiconductors
+    description: Thin-film solar panels. Heavy atoms, low frequencies.
+  - id: mp-2730
+    name: mercury telluride
+    formula: HgTe
+    sg: F-43m
+    group: Semiconductors
+    description: Heavy and soft. Mixed with CdTe it detects infrared; thin layers of it were among the first topological insulators.
+  - id: mp-2542
+    name: beryllium oxide
+    formula: BeO
+    sg: P6_3mc
+    group: Semiconductors
+    description: Very light atoms. An electrical insulator that conducts heat better than many metals.
+  - id: mp-8062
+    name: silicon carbide (3C)
+    formula: SiC
+    sg: F-43m
+    group: Semiconductors
+    description: The gem moissanite. Hard, and found in the power electronics of electric cars.
+  - id: mp-11714
+    name: silicon carbide (4H)
+    formula: SiC
+    sg: P6_3mc
+    group: Semiconductors
+    description: The same atoms as 3C silicon carbide, stacked differently. The form used in most power chips.
+  - id: mp-22895
+    name: copper iodide
+    formula: CuI
+    sg: F-43m
+    group: Semiconductors
+    description: A rare see-through semiconductor that conducts positive charges.
+  - id: mp-361
+    name: cuprite
+    formula: Cu2O
+    sg: Pn-3m
+    group: Semiconductors
+    description: Red copper oxide, one of the first materials used in rectifiers and solar cells, in the 1920s.
+
+  # ---- Salts ----
+  - id: mp-22862
+    name: rock salt
+    formula: NaCl
+    sg: Fm-3m
+    group: Salts
+    description: Table salt. Familiar, simple and soft.
+  - id: mp-23193
+    name: potassium chloride
+    formula: KCl
+    sg: Fm-3m
+    group: Salts
+    description: Low-sodium salt. The same structure as rock salt, with heavier potassium in place of sodium.
+  - id: mp-1138
+    name: lithium fluoride
+    formula: LiF
+    sg: Fm-3m
+    group: Salts
+    description: The lightest salt, made of lithium and fluorine. Its crystals let through ultraviolet light.
+  - id: mp-682
+    name: sodium fluoride
+    formula: NaF
+    sg: Fm-3m
+    group: Salts
+    description: The fluoride in toothpaste.
+  - id: mp-23251
+    name: potassium bromide
+    formula: KBr
+    sg: Fm-3m
+    group: Salts
+    description: Pressed into clear discs to hold samples for infrared spectroscopy. Once a sedative.
+  - id: mp-22898
+    name: potassium iodide
+    formula: KI
+    sg: Fm-3m
+    group: Salts
+    description: Taken to protect the thyroid after a nuclear accident.
+  - id: mp-22905
+    name: lithium chloride
+    formula: LiCl
+    sg: Fm-3m
+    group: Salts
+    description: Pulls water out of the air so strongly that it is used in dehumidifiers.
+  - id: mp-22865
+    name: caesium chloride
+    formula: CsCl
+    sg: Pm-3m
+    group: Salts
+    description: Gave its name to a simple cubic structure where each atom has eight neighbours, not rock salt's six.
+  - id: mp-22922
+    name: silver chloride
+    formula: AgCl
+    sg: Fm-3m
+    group: Salts
+    description: Darkens in light. Used in early photography and in reference electrodes.
+  - id: mp-23231
+    name: silver bromide
+    formula: AgBr
+    sg: Fm-3m
+    group: Salts
+    description: The light-sensitive grains in black-and-white photographic film.
+  - id: mp-981
+    name: strontium fluoride
+    formula: SrF2
+    sg: Fm-3m
+    group: Salts
+    description: Fluorite's structure with heavier strontium, a step down in pitch from calcium fluoride.
+  - id: mp-1029
+    name: barium fluoride
+    formula: BaF2
+    sg: Fm-3m
+    group: Salts
+    description: One of the fastest scintillators, flashing ultraviolet light when hit by radiation.
+  - id: mp-1249
+    name: magnesium fluoride
+    formula: MgF2
+    sg: P4_2/mnm
+    group: Salts
+    description: The anti-reflection coating on many camera lenses.
+
+  # ---- Oxides ----
+  - id: mp-1265
+    name: magnesium oxide
+    formula: MgO
+    sg: Fm-3m
+    group: Oxides
+    description: Rock salt's structure with stiffer bonds, so it sounds higher. Lines furnaces.
+  - id: mp-2605
+    name: calcium oxide
+    formula: CaO
+    sg: Fm-3m
+    group: Oxides
+    description: Quicklime, made by heating limestone. Heated in a flame it glows white, the original "limelight".
+  - id: mp-2472
+    name: strontium oxide
+    formula: SrO
+    sg: Fm-3m
+    group: Oxides
+    description: Rock salt's structure again, with heavier strontium; a step down in pitch from CaO.
+  - id: mp-1342
+    name: barium oxide
+    formula: BaO
+    sg: Fm-3m
+    group: Oxides
+    description: Coated on the hot cathodes of vacuum tubes to help them give off electrons.
+  - id: mp-1960
+    name: lithium oxide
+    formula: Li2O
+    sg: Fm-3m
+    group: Oxides
+    description: Used in glazes and studied for batteries. Light lithium vibrates fast.
+  - id: mp-2858
+    name: zirconia
+    formula: ZrO2
+    sg: P2_1/c
+    group: Oxides
+    description: A tough ceramic for dental crowns and knives. Its cubic form is the diamond look-alike cubic zirconia.
+  - id: mp-352
+    name: hafnia
+    formula: HfO2
+    sg: P2_1/c
+    group: Oxides
+    description: The insulating layer inside modern transistors.
+  - id: mp-20194
+    name: ceria
+    formula: CeO2
+    sg: Fm-3m
+    group: Oxides
+    description: Stores and releases oxygen in car catalytic converters. Also used to polish glass.
+  - id: mp-19921
+    name: litharge
+    formula: PbO
+    sg: P4/nmm
+    group: Oxides
+    description: Red lead oxide, used in lead-acid batteries and lead crystal glass.
+  - id: mp-23262
+    name: bismuth oxide
+    formula: Bi2O3
+    sg: P2_1/c
+    group: Oxides
+    description: A yellow pigment. When hot, it lets oxygen ions move through it quickly.
+  - id: mp-886
+    name: gallium oxide
+    formula: Ga2O3
+    sg: C2/m
+    group: Oxides
+    description: A new material for high-voltage power electronics.
+
+  # ---- Minerals ----
+  - id: mp-3953
+    name: calcite
+    formula: CaCO3
+    sg: R-3c
+    group: Minerals
+    description: Limestone, marble and chalk. Many atoms and three elements make a rich spectrum.
+    n_peaks: {Ca: 6, C: 4, O: 6}
+    smoothing: {Ca: 0.1}
+  - id: mp-4626
+    name: aragonite
+    formula: CaCO3
+    sg: Pnma
+    group: Minerals
+    description: Calcite's twin, with the same atoms packed differently. It forms pearls and mother-of-pearl.
+  - id: mp-7000
+    name: quartz
+    formula: SiO2
+    sg: [P3_121, P3_221]
+    group: Minerals
+    description: Sand, and the crystal that keeps time in quartz watches by vibrating 32,768 times a second.
+  - id: mp-1143
+    name: corundum
+    formula: Al2O3
+    sg: R-3c
+    group: Minerals
+    description: Sapphire and ruby are corundum, coloured by traces of other metals. The second-hardest mineral.
+  - id: mp-2657
+    name: rutile
+    formula: TiO2
+    sg: P4_2/mnm
+    group: Minerals
+    description: Titanium dioxide, the brilliant white of paint, paper and toothpaste.
+  - id: mp-390
+    name: anatase
+    formula: TiO2
+    sg: I4_1/amd
+    group: Minerals
+    description: Another form of titanium dioxide. Driven by light, it breaks down dirt on self-cleaning glass.
+  - id: mp-856
+    name: cassiterite
+    formula: SnO2
+    sg: P4_2/mnm
+    group: Minerals
+    description: Tin ore. A see-through conductor, used in touch screens and gas sensors.
+  - id: mp-2741
+    name: fluorite
+    formula: CaF2
+    sg: Fm-3m
+    group: Minerals
+    description: Gave its name to fluorescence. Clear crystals are used in camera and telescope lenses.
+  - id: mp-3536
+    name: spinel
+    formula: MgAl2O4
+    sg: Fd-3m
+    group: Minerals
+    description: A gemstone often mistaken for ruby. The "Black Prince's Ruby" in the British crown is a spinel.
+  - id: mp-2895
+    name: forsterite
+    formula: Mg2SiO4
+    sg: Pnma
+    group: Minerals
+    description: Green olivine (the gem peridot), one of the main minerals of Earth's upper mantle.
+  - id: mp-4820
+    name: zircon
+    formula: ZrSiO4
+    sg: I4_1/amd
+    group: Minerals
+    description: The oldest known pieces of Earth are zircon crystals, 4.4 billion years old.
+  - id: mp-3164
+    name: barite
+    formula: BaSO4
+    sg: Pnma
+    group: Minerals
+    description: Heavy, and swallowed as a "barium meal" to show up the gut on X-rays.
+  - id: mp-226
+    name: pyrite
+    formula: FeS2
+    sg: Pa-3
+    group: Minerals
+    description: Fool's gold. Its brassy cubes are often mistaken for gold.
+  - id: mp-21276
+    name: galena
+    formula: PbS
+    sg: Fm-3m
+    group: Minerals
+    description: Lead ore, and the crystal in early "cat's whisker" radio receivers.
+  - id: mp-19426
+    name: scheelite
+    formula: CaWO4
+    sg: I4_1/a
+    group: Minerals
+    description: Tungsten ore that glows blue under ultraviolet light.
+  - id: mp-9252
+    name: cinnabar
+    formula: HgS
+    sg: [P3_121, P3_221]
+    group: Minerals
+    description: Bright red mercury ore, ground up for the pigment vermilion.
+  - id: mp-2809
+    name: stibnite
+    formula: Sb2S3
+    sg: Pnma
+    group: Minerals
+    description: Long grey needle-shaped crystals, ground for the eye make-up kohl in ancient Egypt.
+  - id: mp-4019
+    name: perovskite
+    formula: CaTiO3
+    sg: Pnma
+    group: Minerals
+    description: The mineral that gave its name to a whole family of crystal structures.
+
+  # ---- Perovskites and ferroelectrics ----
+  - id: mp-5229
+    name: strontium titanate
+    formula: SrTiO3
+    sg: Pm-3m
+    group: Perovskites and ferroelectrics
+    description: The textbook cubic perovskite. Once sold as a diamond look-alike.
+  - id: mp-5986
+    name: barium titanate
+    formula: BaTiO3
+    sg: P4mm
+    group: Perovskites and ferroelectrics
+    description: A ferroelectric found in the capacitors of almost every electronic device.
+  - id: mp-20459
+    name: lead titanate
+    formula: PbTiO3
+    sg: P4mm
+    group: Perovskites and ferroelectrics
+    description: Half of PZT, the piezoelectric in ultrasound probes and buzzers.
+  - id: mp-3731
+    name: lithium niobate
+    formula: LiNbO3
+    sg: R3c
+    group: Perovskites and ferroelectrics
+    description: Switches and changes the colour of light in fibre-optic networks, and filters radio signals in phones.
+  - id: mp-3614
+    name: potassium tantalate
+    formula: KTaO3
+    sg: Pm-3m
+    group: Perovskites and ferroelectrics
+    description: Close to becoming ferroelectric but never quite does, even near absolute zero.
+  - id: mp-567629
+    name: caesium lead bromide
+    formula: CsPbBr3
+    sg: Pnma
+    group: Perovskites and ferroelectrics
+    description: A halide perovskite that glows bright green. A cousin of the new perovskite solar cells.
+
+  # ---- Thermoelectrics ----
+  - id: mp-19717
+    name: lead telluride
+    formula: PbTe
+    sg: Fm-3m
+    group: Thermoelectrics
+    description: Heavy and soft, with some of the lowest frequencies here. Turned heat into electricity on space probes.
+  - id: mp-2201
+    name: lead selenide
+    formula: PbSe
+    sg: Fm-3m
+    group: Thermoelectrics
+    description: An infrared detector and thermoelectric. Between galena (PbS) and PbTe in pitch.
+  - id: mp-1883
+    name: tin telluride
+    formula: SnTe
+    sg: Fm-3m
+    group: Thermoelectrics
+    description: A lead-free relative of PbTe, and a topological crystalline insulator.
+  - id: mp-691
+    name: tin selenide
+    formula: SnSe
+    sg: Pnma
+    group: Thermoelectrics
+    description: A record-breaking thermoelectric (2014). Its soft, uneven bonds barely carry heat.
+  - id: mp-938
+    name: germanium telluride
+    formula: GeTe
+    sg: R3m
+    group: Thermoelectrics
+    description: Flips between glassy and crystalline forms, like the alloys in rewritable DVDs.
+  - id: mp-34202
+    name: bismuth telluride
+    formula: Bi2Te3
+    sg: R-3m
+    group: Thermoelectrics
+    description: The heart of thermoelectric coolers in camping fridges. Heavy atoms, low pitch.
+  - id: mp-541837
+    name: bismuth selenide
+    formula: Bi2Se3
+    sg: R-3m
+    group: Thermoelectrics
+    description: A textbook topological insulator. Its surface conducts electricity but its inside does not.
+  - id: mp-1201
+    name: antimony telluride
+    formula: Sb2Te3
+    sg: R-3m
+    group: Thermoelectrics
+    description: Pairs with bismuth telluride in thermoelectric coolers.
+  - id: mp-1367
+    name: magnesium silicide
+    formula: Mg2Si
+    sg: Fm-3m
+    group: Thermoelectrics
+    description: A light, cheap and non-toxic thermoelectric made from common elements.
+  - id: mp-1317
+    name: skutterudite
+    formula: CoSb3
+    sg: Im-3
+    group: Thermoelectrics
+    description: Has cage-like gaps; atoms placed in them rattle and scatter heat.
+
+  # ---- Layered materials ----
+  - id: mp-984
+    name: hexagonal boron nitride
+    formula: BN
+    sg: P6_3/mmc
+    group: Layered materials
+    description: '"White graphite": flat sheets like graphite, but an insulator. Used in cosmetics and lubricants.'
+  - id: mp-2815
+    name: molybdenite
+    formula: MoS2
+    sg: P6_3/mmc
+    group: Layered materials
+    description: A dry lubricant made of slippery sheets. A single sheet is a 2D semiconductor.
+  - id: mp-224
+    name: tungsten disulfide
+    formula: WS2
+    sg: P6_3/mmc
+    group: Layered materials
+    description: Like molybdenite with heavier tungsten. Listen for the lower metal peaks.
+  - id: mp-1634
+    name: molybdenum diselenide
+    formula: MoSe2
+    sg: P6_3/mmc
+    group: Layered materials
+    description: Another sheet semiconductor. Heavier selenium in place of sulfur lowers the pitch.
+  - id: mp-1821
+    name: tungsten diselenide
+    formula: WSe2
+    sg: P6_3/mmc
+    group: Layered materials
+    description: The heaviest of these sheet materials, and the lowest in pitch.
+
+  # ---- Hard and light materials ----
+  - id: mp-988
+    name: silicon nitride
+    formula: Si3N4
+    sg: P6_3/m
+    group: Hard and light materials
+    description: A tough ceramic for ball bearings and engine parts.
+  - id: mp-1894
+    name: tungsten carbide
+    formula: WC
+    sg: P-6m2
+    group: Hard and light materials
+    description: Drill bits and cutting tools. Very heavy tungsten with very light carbon.
+  - id: mp-696
+    name: boron carbide
+    formula: B4C
+    sg: R-3m
+    group: Hard and light materials
+    description: Used in body armour, and one of the hardest materials known.
+  - id: mp-23703
+    name: lithium hydride
+    formula: LiH
+    sg: Fm-3m
+    group: Hard and light materials
+    description: Made of the two lightest atoms here, lithium and hydrogen. Used as a radiation shield.
+  - id: mp-23710
+    name: magnesium hydride
+    formula: MgH2
+    sg: P4_2/mnm
+    group: Hard and light materials
+    description: Stores hydrogen and releases it when heated.
+  - id: mp-2251
+    name: lithium nitride
+    formula: Li3N
+    sg: P6/mmm
+    group: Hard and light materials
+    description: Lithium ions move through it quickly, so it is studied for batteries.

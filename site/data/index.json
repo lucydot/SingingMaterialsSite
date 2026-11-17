@@ -1,0 +1,673 @@
+[
+ {
+  "mp_id": "mp-66",
+  "name": "diamond",
+  "formula": "C",
+  "group": "Elements",
+  "description": "The hardest natural material. Light carbon atoms and stiff bonds give some of the highest-pitched vibrations here.",
+  "labels": [
+   "C"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-149",
+  "name": "silicon",
+  "formula": "Si",
+  "group": "Elements",
+  "description": "The material of computer chips. The same structure as diamond with heavier atoms, so the whole spectrum drops.",
+  "labels": [
+   "Si"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-2534",
+  "name": "gallium arsenide",
+  "formula": "GaAs",
+  "group": "Semiconductors",
+  "description": "Diamond's structure with two atoms of almost the same mass. In lasers, LEDs and the solar panels of satellites.",
+  "labels": [
+   "Ga",
+   "As"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-2490",
+  "name": "gallium phosphide",
+  "formula": "GaP",
+  "group": "Semiconductors",
+  "description": "Used in early red and green LEDs. Lighter phosphorus lifts the top of the spectrum compared with GaAs.",
+  "labels": [
+   "Ga",
+   "P"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-804",
+  "name": "gallium nitride",
+  "formula": "GaN",
+  "group": "Semiconductors",
+  "description": "The material behind blue LEDs (Nobel Prize 2014) and small, fast phone chargers.",
+  "labels": [
+   "Ga",
+   "N"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-20351",
+  "name": "indium phosphide",
+  "formula": "InP",
+  "group": "Semiconductors",
+  "description": "Sends and receives the light signals in fibre-optic networks.",
+  "labels": [
+   "In",
+   "P"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-661",
+  "name": "aluminium nitride",
+  "formula": "AlN",
+  "group": "Semiconductors",
+  "description": "A ceramic that carries heat well but not electricity, used to cool electronics.",
+  "labels": [
+   "Al",
+   "N"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1550",
+  "name": "aluminium phosphide",
+  "formula": "AlP",
+  "group": "Semiconductors",
+  "description": "Releases phosphine gas when wet, so it is used to fumigate stored grain.",
+  "labels": [
+   "Al",
+   "P"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-2172",
+  "name": "aluminium arsenide",
+  "formula": "AlAs",
+  "group": "Semiconductors",
+  "description": "Almost exactly the size of GaAs, so layers of the two grow neatly together in laser diodes.",
+  "labels": [
+   "Al",
+   "As"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1639",
+  "name": "cubic boron nitride",
+  "formula": "BN",
+  "group": "Semiconductors",
+  "description": "Diamond's structure built from boron and nitrogen. Nearly as hard as diamond and used in cutting tools.",
+  "labels": [
+   "B",
+   "N"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-10044",
+  "name": "boron arsenide",
+  "formula": "BAs",
+  "group": "Semiconductors",
+  "description": "Light boron and heavy arsenic leave a big gap between low and high peaks. It conducts heat almost as well as diamond.",
+  "labels": [
+   "B",
+   "As"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1479",
+  "name": "boron phosphide",
+  "formula": "BP",
+  "group": "Semiconductors",
+  "description": "A hard, chemically tough semiconductor. Light atoms and stiff bonds put it high in pitch.",
+  "labels": [
+   "B",
+   "P"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-2133",
+  "name": "zinc oxide",
+  "formula": "ZnO",
+  "group": "Semiconductors",
+  "description": "The white in sunscreen and nappy cream. It also turns squeezing into voltage (piezoelectric).",
+  "labels": [
+   "Zn",
+   "O"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-10695",
+  "name": "zinc blende",
+  "formula": "ZnS",
+  "group": "Semiconductors",
+  "description": "The mineral sphalerite, the main ore of zinc. It gave its name to the crystal structure of GaAs and its relatives.",
+  "labels": [
+   "Zn",
+   "S"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1190",
+  "name": "zinc selenide",
+  "formula": "ZnSe",
+  "group": "Semiconductors",
+  "description": "Clear to infrared light. Used for the lenses and windows of carbon dioxide lasers.",
+  "labels": [
+   "Zn",
+   "Se"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-2176",
+  "name": "zinc telluride",
+  "formula": "ZnTe",
+  "group": "Semiconductors",
+  "description": "Used to make and detect terahertz pulses, the same frequency range as the vibrations you are hearing.",
+  "labels": [
+   "Zn",
+   "Te"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-672",
+  "name": "cadmium sulfide",
+  "formula": "CdS",
+  "group": "Semiconductors",
+  "description": "The pigment cadmium yellow. Also used in light-dependent resistors.",
+  "labels": [
+   "Cd",
+   "S"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-2691",
+  "name": "cadmium selenide",
+  "formula": "CdSe",
+  "group": "Semiconductors",
+  "description": "Tiny crystals of it are the quantum dots that glow in some TV screens.",
+  "labels": [
+   "Cd",
+   "Se"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-406",
+  "name": "cadmium telluride",
+  "formula": "CdTe",
+  "group": "Semiconductors",
+  "description": "Thin-film solar panels. Heavy atoms, low frequencies.",
+  "labels": [
+   "Cd",
+   "Te"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-2542",
+  "name": "beryllium oxide",
+  "formula": "BeO",
+  "group": "Semiconductors",
+  "description": "Very light atoms. An electrical insulator that conducts heat better than many metals.",
+  "labels": [
+   "Be",
+   "O"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-8062",
+  "name": "silicon carbide (3C)",
+  "formula": "SiC",
+  "group": "Semiconductors",
+  "description": "The gem moissanite. Hard, and found in the power electronics of electric cars.",
+  "labels": [
+   "Si",
+   "C"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-11714",
+  "name": "silicon carbide (4H)",
+  "formula": "SiC",
+  "group": "Semiconductors",
+  "description": "The same atoms as 3C silicon carbide, stacked differently. The form used in most power chips.",
+  "labels": [
+   "Si",
+   "C"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-22895",
+  "name": "copper iodide",
+  "formula": "CuI",
+  "group": "Semiconductors",
+  "description": "A rare see-through semiconductor that conducts positive charges.",
+  "labels": [
+   "Cu",
+   "I"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-22862",
+  "name": "rock salt",
+  "formula": "NaCl",
+  "group": "Salts",
+  "description": "Table salt. Familiar, simple and soft.",
+  "labels": [
+   "Na",
+   "Cl"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-23193",
+  "name": "potassium chloride",
+  "formula": "KCl",
+  "group": "Salts",
+  "description": "Low-sodium salt. The same structure as rock salt, with heavier potassium in place of sodium.",
+  "labels": [
+   "K",
+   "Cl"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1138",
+  "name": "lithium fluoride",
+  "formula": "LiF",
+  "group": "Salts",
+  "description": "The lightest salt, made of lithium and fluorine. Its crystals let through ultraviolet light.",
+  "labels": [
+   "Li",
+   "F"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-682",
+  "name": "sodium fluoride",
+  "formula": "NaF",
+  "group": "Salts",
+  "description": "The fluoride in toothpaste.",
+  "labels": [
+   "Na",
+   "F"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-23251",
+  "name": "potassium bromide",
+  "formula": "KBr",
+  "group": "Salts",
+  "description": "Pressed into clear discs to hold samples for infrared spectroscopy. Once a sedative.",
+  "labels": [
+   "K",
+   "Br"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-22898",
+  "name": "potassium iodide",
+  "formula": "KI",
+  "group": "Salts",
+  "description": "Taken to protect the thyroid after a nuclear accident.",
+  "labels": [
+   "K",
+   "I"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-22905",
+  "name": "lithium chloride",
+  "formula": "LiCl",
+  "group": "Salts",
+  "description": "Pulls water out of the air so strongly that it is used in dehumidifiers.",
+  "labels": [
+   "Li",
+   "Cl"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-22865",
+  "name": "caesium chloride",
+  "formula": "CsCl",
+  "group": "Salts",
+  "description": "Gave its name to a simple cubic structure where each atom has eight neighbours, not rock salt's six.",
+  "labels": [
+   "Cs",
+   "Cl"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-22922",
+  "name": "silver chloride",
+  "formula": "AgCl",
+  "group": "Salts",
+  "description": "Darkens in light. Used in early photography and in reference electrodes.",
+  "labels": [
+   "Ag",
+   "Cl"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-23231",
+  "name": "silver bromide",
+  "formula": "AgBr",
+  "group": "Salts",
+  "description": "The light-sensitive grains in black-and-white photographic film.",
+  "labels": [
+   "Ag",
+   "Br"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-981",
+  "name": "strontium fluoride",
+  "formula": "SrF2",
+  "group": "Salts",
+  "description": "Fluorite's structure with heavier strontium, a step down in pitch from calcium fluoride.",
+  "labels": [
+   "Sr",
+   "F"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1029",
+  "name": "barium fluoride",
+  "formula": "BaF2",
+  "group": "Salts",
+  "description": "One of the fastest scintillators, flashing ultraviolet light when hit by radiation.",
+  "labels": [
+   "Ba",
+   "F"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1249",
+  "name": "magnesium fluoride",
+  "formula": "MgF2",
+  "group": "Salts",
+  "description": "The anti-reflection coating on many camera lenses.",
+  "labels": [
+   "Mg",
+   "F"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1265",
+  "name": "magnesium oxide",
+  "formula": "MgO",
+  "group": "Oxides",
+  "description": "Rock salt's structure with stiffer bonds, so it sounds higher. Lines furnaces.",
+  "labels": [
+   "Mg",
+   "O"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-2605",
+  "name": "calcium oxide",
+  "formula": "CaO",
+  "group": "Oxides",
+  "description": "Quicklime, made by heating limestone. Heated in a flame it glows white, the original \"limelight\".",
+  "labels": [
+   "Ca",
+   "O"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-2472",
+  "name": "strontium oxide",
+  "formula": "SrO",
+  "group": "Oxides",
+  "description": "Rock salt's structure again, with heavier strontium; a step down in pitch from CaO.",
+  "labels": [
+   "Sr",
+   "O"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1342",
+  "name": "barium oxide",
+  "formula": "BaO",
+  "group": "Oxides",
+  "description": "Coated on the hot cathodes of vacuum tubes to help them give off electrons.",
+  "labels": [
+   "Ba",
+   "O"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-1960",
+  "name": "lithium oxide",
+  "formula": "Li2O",
+  "group": "Oxides",
+  "description": "Used in glazes and studied for batteries. Light lithium vibrates fast.",
+  "labels": [
+   "Li",
+   "O"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ },
+ {
+  "mp_id": "mp-3953",
+  "name": "calcite",
+  "formula": "CaCO3",
+  "group": "Minerals",
+  "description": "Limestone, marble and chalk. Many atoms and three elements make a rich spectrum.",
+  "labels": [
+   "Ca",
+   "C",
+   "O"
+  ],
+  "temps": [
+   "athermal",
+   "300K",
+   "600K"
+  ]
+ }
+]

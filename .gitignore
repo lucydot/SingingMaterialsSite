@@ -1,0 +1,6 @@
+.env
+*_dos.json
+*_bs.json
+__pycache__/
+.DS_Store
+cache/

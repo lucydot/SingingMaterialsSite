@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · Singing Materials</title>
+  <meta name="description" content="How Singing Materials turns the vibrations of atoms in a crystal into sound.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Quicksand:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="site-header">
+    <a class="site-name" href="./"><img src="title.svg" alt="Singing Materials"></a>
+    <nav aria-label="Main">
+      <a href="./">Listen</a>
+      <a href="about.html" aria-current="page">About</a>
+    </nav>
+  </header>
+
+  <main class="prose">
+    <h1>About</h1>
+
+    <p>Quantum Mechanics tells us that the atoms in a material are never still; they are always vibrating with energy.
+      Phonons are used to describe these vibrations. They are important because they affect a whole host of material properties, such as stability, heat transport, light absorption and electronic conductivity.</p>
+
+    <p>Every material has its own set of vibration frequencies, determined by the types and arrangements of atoms in the material. For example, light atoms and stiff bonds vibrate fast;
+      heavy atoms and soft bonds vibrate slowly. This website <it>sonifies</it> these vibrations, allowing you to hear the unique acoustic signature of each material.</p>
+
+    <h2>What you are hearing</h2>
+    <p>Phonons vibrate around a trillion times a second (terahertz, THz), about 35 octaves above anything you
+      can hear. Each sound on this site takes those frequencies and plays them 35 octaves lower, so 1&nbsp;THz
+      sounds at about 29&nbsp;Hz. </p>
+    <p>A material vibrates across a range of frequencies, at a density given by the <em>phonon density of states</em> (DOS). 
+      This website fits the spectrum with a handful of Gaussian peaks, and maps the features of each peak to audible parameters.</p>
+
+      <p>The peak fits are a simplification: they keep the main features of each spectrum and lose the fine detail.
+      The chart on the Listen page shows the full density of states with the fitted peaks over it.</p>
+
+    <h2>The sounds</h2>
+    <ul>
+      <li><strong>chord</strong>: every peak sounds together; taller peaks are louder, broader peaks have more vibrato.</li>
+      <li><strong>arp</strong>: the peaks sound one after another, low to high; taller peaks are louder, sharper peaks ring longer.</li>
+      <li><strong>pluck</strong>: the chord struck once; taller peaks are louder, sharper peaks ring longer.</li>
+      <li><strong>spectrum</strong>: each peak as a band of noise; taller peaks are louder, broader peaks have a wider bandwidth.</li>
+    </ul>
+
+    <h2>Elements and temperature</h2>
+    <p>In a material made of more than one element, each element takes part in the vibrations differently:
+      typically, light atoms dominate the high frequencies and heavy atoms the low ones.</p>
+    <p>With no temperature chosen you hear every vibration the crystal can have. At 300&nbsp;K (room temperature)
+      or 600&nbsp;K, each vibration is weighted by how many phonons are actually present at that temperature
+      (the Bose–Einstein occupation). Low frequencies are easy to excite, so they become louder.</p>
+
+    <h2>How it is made</h2>
+    <p>The phonon data comes from the <a href="https://next-gen.materialsproject.org/">Materials Project</a>,
+      calculated with density functional theory. The peaks are fitted with
+      <a href="https://github.com/lucydot/SingingMaterials">SingingMaterials</a> and turned into
+      <a href="https://strudel.cc/">Strudel</a> code with
+      <a href="https://github.com/lucydot/MP2Strudel">MP2Strudel</a>. Strudel plays the sound in your browser.
+      The code is shown under every sound; open it in strudel.cc to change it and make your own.</p>
+    
+    <h2>Paper</h2>
+    <p>Whalley, L. et al. (2026). <em>Singing Materials: Initial experiments in applying sonification to phonon
+      spectra.</em> <a href="https://arxiv.org/abs/2603.29037">arXiv:2603.29037</a></p>
+  </main>
+
+  <footer>
+    <p>Data: <a href="https://next-gen.materialsproject.org/">Materials Project</a>.
+      Peaks: <a href="https://github.com/lucydot/SingingMaterials">SingingMaterials</a>.
+      Sound: <a href="https://strudel.cc/">Strudel</a>.</p>
+  </footer>
+</div>
+</body>
+</html>
