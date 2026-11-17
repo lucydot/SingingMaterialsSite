@@ -163,5 +163,5 @@ Results not yet built go through the phase 2 request. Details: `docs/future-sear
 4. **Element choice for multi-element materials:** play one element at a time (current mockup), all
    elements together (e.g. `stack(pluck(Ca).pan(0.15), pluck(C).pan(0.5), pluck(O).pan(0.85))`), or
    offer "all" as an option?
-5. **Licence:** Strudel is AGPL-3.0; check what that means for a page that loads `@strudel/web`
-   (the site's own source being public under a compatible licence is the safe default).
+5. **Licence:** *settled 17 Nov 2026*: the repo is AGPL-3.0 (`LICENSE`), matching Strudel; the footer links
+   to the source. Title lettering is from Caveat (OFL 1.1); Materials Project data is CC BY 4.0 (README).
