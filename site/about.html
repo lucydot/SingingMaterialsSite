@@ -23,21 +23,19 @@
   <main class="prose">
     <h1>About</h1>
 
-    <p>The atoms in a material are never still, they are always vibrating with energy.
-      At the quantum scale, phonons are used to describe these vibrations. They are important because they affect a whole host of material properties, such as stability, heat transport, light absorption and electronic conductivity.</p>
+    <p>The atoms in a material are never still - they are always vibrating with energy.
+      These vibrations are important because they affect a wide range of material properties, such as stability, heat transport, light absorption and electronic conductivity.</p>
 
-    <p>Each material has its own set of vibrational frequencies, determined by the types and arrangements of atoms. For example, light atoms and stiff bonds vibrate fast;
-      heavy atoms and soft bonds vibrate slowly. This website <it>sonifies</it> these vibrations, so that you can hear the unique acoustic signature of each material.</p>
+    <p>Each material has its own set of vibrational frequencies, determined by the types and arrangements of atoms. For example, light atoms and short, stiff bonds vibrate fast;
+      heavy atoms and long, soft bonds vibrate slowly. This website <it>sonifies</it> these vibrations, so that you can hear the unique vibrational fingerprint of each material.</p>
 
     <h2>What you are hearing</h2>
-    <p>Phonons vibrate around a trillion times a second (terahertz, THz), which is well above anything a human 
+    <p>Materials vibrate around a trillion times a second (terahertz, THz), which is well above anything a human 
       can hear. The algorithm underlying this site takes those frequencies and plays them 35 octaves lower, so 1&nbsp;THz
       sounds at about 29&nbsp;Hz, within the audible range. </p>
-    <p>A material vibrates across a range of frequencies, at a density given by the <em>phonon density of states</em> (DOS). 
+    <p>A material vibrates across a range of frequencies, as specified by the <em>density of states</em> (DOS). 
+      States refers to phonons, the quantum mechanical vibrations of the crystal. The DOS is a spectrum showing how many phonons exist at each frequency.
       This website fits the spectrum with a series of Gaussian peaks, and maps the features of each peak to audible parameters.</p>
-
-      <p>The peak fits are a simplification: in most cases, they keep the main features of each spectrum but they do lose the fine detail.
-      The chart on the Listen page shows the full density of states with the fitted peaks over it.</p>
 
     <h2>The sounds</h2>
     <ul>
@@ -51,11 +49,18 @@
     <p>In a material made of more than one element, each element contributes tothe vibrational spectrum differently:
       typically, light atoms dominate the high frequencies and heavy atoms the low ones.</p>
     <p>With no temperature chosen you hear every vibration the crystal can have. At 300&nbsp;K (room temperature)
-      or 600&nbsp;K, each vibration is weighted by how many phonons are actually present at that temperature
-      (the Bose–Einstein occupation). Low frequencies are easy to excite, so they become louder. Note however that this temperature-dependence ignores more complex anharmonic effects effects such as thermal expansion.</p>
+      or 600&nbsp;K, each vibration is weighted by how many vibrational excitations (phonons) are actually present at that temperature
+      (the Bose–Einstein occupation). Low frequencies are easy to excite, so they become louder. </p>
+
+      <h2>Key limitations of this approach</h2>
+
+      <p>The peak fits are a simplification: in most cases, they keep the main features of each spectrum but they do lose the fine detail.
+      The chart on the Listen page shows the full density of states with the fitted peaks over it.</p>
+
+      <p>The temperature-dependence ignores higher-order effects such as thermal expansion or phonon-phonon interactions.</p>
 
     <h2>How it is made</h2>
-    <p>The phonon data comes from the <a href="https://next-gen.materialsproject.org/">Materials Project</a>,
+    <p>The density of states data comes from the <a href="https://next-gen.materialsproject.org/">Materials Project</a>,
       calculated with Density Functional Theory. The peaks are fitted with
       <a href="https://github.com/lucydot/SingingMaterials">SingingMaterials</a> and turned into
       <a href="https://strudel.cc/">Strudel</a> code with
