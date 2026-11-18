@@ -257,7 +257,7 @@ async function selectMaterial(mpId, prefer = {}) {
   const hasTotal = labels.length > 1 && Object.values(state.data.by_temp).every((t) => t.total);
   const options = hasTotal ? [ALL, ...labels] : labels;
   state.element = [prefer.element, state.element].find((e) => options.includes(e)) ?? options[0];
-  fillSelect($("element"), options, options.map((e) => (e === ALL ? "all (total DOS)" : e)), state.element);
+  fillSelect($("element"), options, options.map((e) => (e === ALL ? "all" : e)), state.element);
 
   const temps = state.data.temps;
   state.temp = [prefer.temp, state.temp].find((t) => temps.includes(t)) ?? temps[0];
