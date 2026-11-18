@@ -6,7 +6,7 @@ A static website for hearing the phonon spectra of materials. Peaks are fitted w
 and turned into [Strudel](https://strudel.cc/) code with [MP2Strudel](https://github.com/lucydot/MP2Strudel).
 The data is from the [Materials Project](https://next-gen.materialsproject.org).
 
-This was developed during Lucy's time at the wonderful [Recurse Center](https://www.recurse.com/).
+This was developed during my time at the wonderful [Recurse Center](https://www.recurse.com/).
 
 ## Licence
 
