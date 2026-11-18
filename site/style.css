@@ -48,12 +48,9 @@ p { margin: 0; }
   align-items: center;
   justify-content: space-between;
   gap: 0 1em;
-  padding-bottom: 0.25rem;
-  border-bottom: var(--rule);
 }
-/* hand-lettered title (title.svg, made by scripts/make_title.py) */
-.site-name { display: block; line-height: 0; }
-.site-name img { display: block; height: 3.6rem; width: auto; max-width: 100%; }
+/* title in Caveat (Google Fonts, OFL) */
+.site-name { font-family: Caveat, cursive; font-weight: 600; font-size: 3.4rem; line-height: 1.1; color: var(--accent); }
 .site-header a, .site-header a:hover, .site-header a:focus-visible { border-bottom-color: transparent; } /* no underlines up here */
 .site-header nav { display: flex; gap: 1em; }
 .site-header nav a { color: var(--text); }
@@ -73,7 +70,7 @@ label, .label { font-size: 0.75em; }
 
 select, input, button { font: inherit; color: inherit; }
 
-select, input[type="text"] {
+select {
   width: 100%;
   max-width: 100%;
   padding: 0.15em 0.3em;
@@ -83,7 +80,6 @@ select, input[type="text"] {
   color: var(--strong);
 }
 .row select { width: auto; min-width: 8em; }
-input[type="text"] { max-width: 10em; font-family: var(--mono); font-size: 0.75em; }
 
 .description { color: var(--strong); font-size: 0.75em; }
 
@@ -174,7 +170,7 @@ footer p + p { margin-top: 0.4em; }
 
 @media (max-width: 40rem) {
   body { font-size: 1.5rem; }
-  .site-name img { height: 2.8rem; }
+  .site-name { font-size: 2.6rem; }
   .page { padding: 1rem; }
   .code { font-size: 0.5em; }
   .tooltip { font-size: 0.55em; }

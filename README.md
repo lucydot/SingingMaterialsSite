@@ -11,8 +11,9 @@ The data is from the [Materials Project](https://next-gen.materialsproject.org).
 The site and scripts are under the [GNU Affero General Public License v3.0](LICENSE), the licence of
 [Strudel](https://strudel.cc/), which the site loads and runs. 
 
-- `site/title.svg` is drawn from the letter shapes of [Caveat](https://github.com/google/fonts/tree/main/ofl/caveat)
-  (© The Caveat Project Authors), used under the [SIL Open Font License 1.1](https://openfontlicense.org).
+- The title is set in [Caveat](https://fonts.google.com/specimen/Caveat), and the text in
+  [Quicksand](https://fonts.google.com/specimen/Quicksand) and [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono),
+  loaded from Google Fonts under the [SIL Open Font License 1.1](https://openfontlicense.org).
 - Phonon data comes from the [Materials Project](https://next-gen.materialsproject.org/), under
   [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); the fitted peaks in `site/data/` are derived from it.
 
