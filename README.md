@@ -23,3 +23,7 @@ The site and scripts are under the [GNU Affero General Public License v3.0](LICE
 
 The following publication provides further context for this work: Whalley, L. et al. (2026). *Singing Materials: Initial experiments in applying sonification to phonon
 spectra.* [arXiv:2603.29037](https://arxiv.org/abs/2603.29037)
+
+## AI Usage
+
+I used Claude (Anthropic) as a coding assistant, mainly to help write the JavaScript for this site. I reviewed, tested and edited all of the code, and I take responsibility for it.
