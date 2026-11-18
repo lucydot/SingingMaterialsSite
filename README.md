@@ -2,7 +2,7 @@
 
 *The sound of atomic-scale vibrations.*
 
-A static website for hearing the phonon spectra of materials: pick a material, the sonification mapping, press Play. Peaks are fitted with [SingingMaterials](https://github.com/lucydot/SingingMaterials),
+A static website for hearing the phonon spectra of materials. Peaks are fitted with [SingingMaterials](https://github.com/lucydot/SingingMaterials),
 and turned into [Strudel](https://strudel.cc/) code with [MP2Strudel](https://github.com/lucydot/MP2Strudel).
 The data is from the [Materials Project](https://next-gen.materialsproject.org).
 
