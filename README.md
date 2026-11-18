@@ -6,6 +6,8 @@ A static website for hearing the phonon spectra of materials: pick a material, t
 and turned into [Strudel](https://strudel.cc/) code with [MP2Strudel](https://github.com/lucydot/MP2Strudel).
 The data is from the [Materials Project](https://next-gen.materialsproject.org).
 
+This was developed during Lucy's time at the wonderful [Recurse Center](https://www.recurse.com/).
+
 ## Licence
 
 The site and scripts are under the [GNU Affero General Public License v3.0](LICENSE), the licence of
@@ -19,5 +21,5 @@ The site and scripts are under the [GNU Affero General Public License v3.0](LICE
 
 ## Citation
 
-Whalley, L. et al. (2026). *Singing Materials: Initial experiments in applying sonification to phonon
+The following publication provides further context for this work: Whalley, L. et al. (2026). *Singing Materials: Initial experiments in applying sonification to phonon
 spectra.* [arXiv:2603.29037](https://arxiv.org/abs/2603.29037)
