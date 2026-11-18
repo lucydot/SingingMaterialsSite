@@ -1,4 +1,4 @@
-# Singing Materials site
+# Singing Materials website
 
 *The sound of atomic-scale vibrations.*
 
@@ -6,7 +6,7 @@ A static website for hearing the phonon spectra of materials. Peaks are fitted w
 and turned into [Strudel](https://strudel.cc/) code with [MP2Strudel](https://github.com/lucydot/MP2Strudel).
 The data is from the [Materials Project](https://next-gen.materialsproject.org).
 
-This was developed during my time at the wonderful [Recurse Center](https://www.recurse.com/).
+This website was created during my time at the wonderful [Recurse Center](https://www.recurse.com/). The website is still in development and is expected to improve over time. If you spot any issues or have suggestions, please let me know on the repository <a href="https://github.com/lucydot/SingingMaterialsSite/issues">issue page</a>.</p>
 
 ## Licence
 
@@ -21,7 +21,7 @@ The site and scripts are under the [GNU Affero General Public License v3.0](LICE
 
 ## AI Usage
 
-I used Claude as a coding assistant, mainly to help write the JavaScript for this site. I reviewed, tested and edited all of the code, and I take responsibility for it.
+I used Claude as a coding assistant, mainly to help write the JavaScript for this site. I reviewed, tested and edited all of the code, and I take responsibility for it. Claude was also used to generate the short description for each material. 
 
 ## Citation
 

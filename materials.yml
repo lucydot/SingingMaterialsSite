@@ -3,7 +3,7 @@
 # Each entry: id (Materials Project), name, formula, sg (expected space group, MP's notation; a list if
 # either is fine), group, description (one line, shown under the drop-down). Optional n_peaks /
 # smoothing (THz) override the defaults below: one value, or per element as in MP2Strudel. In a
-# per-element dict, a `total` key sets the fit for "all (total DOS)" on the page, e.g. {Ca: 6, total: 8}.
+# per-element dict, a `total` key sets the fit for "all" (the total DOS) on the page, e.g. {Ca: 6, total: 8}.
 #
 # Many IDs were written from memory. `python scripts/check_materials.py` checks every ID has phonon data
 # with the right formula and space group, and suggests a replacement where not; `--fix` writes them in.

@@ -4,9 +4,9 @@
   --bg: #ffffff;
   --text: #666666;      /* 5.7:1 on white */
   --strong: #333333;
-  --accent: #4f58c4;    /* 5.9:1 on white */
-  --accent-pale: #4f58c433;
-  --code-bg: #f6f6fb;
+  --accent: #b4501b;    /* burnt orange, 5.1:1 on white */
+  --accent-pale: #b4501b33;
+  --code-bg: #fbf6f2;
   --rule: 1px solid var(--accent);
   --font: "Quicksand", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
