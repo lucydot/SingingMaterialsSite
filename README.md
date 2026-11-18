@@ -21,7 +21,7 @@ The site and scripts are under the [GNU Affero General Public License v3.0](LICE
 
 ## AI Usage
 
-I used Claude (Anthropic) as a coding assistant, mainly to help write the JavaScript for this site. I reviewed, tested and edited all of the code, and I take responsibility for it.
+I used Claude as a coding assistant, mainly to help write the JavaScript for this site. I reviewed, tested and edited all of the code, and I take responsibility for it.
 
 ## Citation
 
